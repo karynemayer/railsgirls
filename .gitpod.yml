@@ -1,0 +1,8 @@
+ports:
+  - port: 3000
+tasks:
+  - command: >
+        gem install nokogiri -- --use-system-libraries &&
+        gem install rails &&
+        rails new railsgirls &&
+        cd railsgirls
