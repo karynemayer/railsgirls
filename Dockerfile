@@ -15,9 +15,4 @@ RUN npm install -g yarn
 
 ENV RAILS_VERSION 6.0.1
 
-RUN gem install rails --version "$RAILS_VERSION" && \
-    rails new railsgirls
-
-WORKDIR railsgirls
-
-EXPOSE 3000
+RUN gem install rails --version "$RAILS_VERSION"
